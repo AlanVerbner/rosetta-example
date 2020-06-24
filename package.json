@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "openapi-codegen": "^2.0.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "dtsgen": "0.0.5"
+    "dtsgen": "0.0.5",
+    "openapi-codegen": "2.0.4"
   },
   "scripts": {
     "generate-types": "snc -o ./types ../rosetta-specifications/api.json",
+    "generate-server": "cg -o ./server --flat nodejs ./rosetta-specifications/api.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
