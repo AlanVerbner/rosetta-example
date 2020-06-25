@@ -1,0 +1,22 @@
+{
+  "name": "rosetta",
+  "description": "A Standard for Blockchain Interaction",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "fastify start index.js",
+    "test": "tap test/test-*.js",
+    "dev": "fastify start -l info -P index.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "fastify-plugin": "^1.6.1",
+    "fastify-openapi-glue": "^1.6.0"
+  },
+  "devDependencies": {
+    "fastify": "^2.13.1",
+    "fastify-cli": "^1.5.0",
+    "tap": "^14.10.7"
+  }
+}
